@@ -29,7 +29,7 @@ export function ProductsGroupList({
 
 	useEffect(() => {
 		if (intersection?.isIntersecting) {
-			console.log(categoryId, title)
+			setActiveCategoryId(categoryId)
 		}
 	}, [categoryId, intersection?.isIntersecting, title])
 	return (
